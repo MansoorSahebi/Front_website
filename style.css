@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f9f6f2;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    background: linear-gradient(135deg, #05008b, #b22222);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.logo {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+/* Hover underline */
+.nav-links a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #ffd700;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Login Button */
+.login-btn {
+    background-color: #ffd700;
+    color: #1d395b !important;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.login-btn:hover {
+    background-color: #fff;
+}
